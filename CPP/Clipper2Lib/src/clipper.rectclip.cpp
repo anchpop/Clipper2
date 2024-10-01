@@ -421,9 +421,6 @@ namespace Clipper2Lib {
         break; //inner loop
       }
       break;
-    // Should never happen, but adding this to stop a compiler warning
-    default:
-      break;
     } //switch
   }
 
@@ -439,9 +436,6 @@ namespace Clipper2Lib {
         case 1: result += 1; break;
         case -3: result += 1; break;
         case 3: result -= 1; break;
-        default:
-          // Should never happen, but adding this to stop a compiler warning
-          break;
       }
     }
     return result > 0;
